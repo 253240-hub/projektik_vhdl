@@ -62,7 +62,13 @@ PWB generator_tb
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
-
+|`count`| in|`std_logic_vector(G_BITS-1 downto 0)`| ....   |
+|`led1`|out|`std_logic`|....|
+|`led2`|out|`std_logic`|....|
+|`led3`|out|`std_logic`|....|
+|`p1`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
+|`p2`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
+|`p3`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
 
 
 
