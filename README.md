@@ -15,7 +15,7 @@ Tento projekt je yaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 * reset
 (vrátit do původního stavu)
 
-### Blok 1. Architecture
+## Blok 1. Architecture
 
 ## Blokove schema
 
@@ -27,5 +27,15 @@ Tento projekt je yaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 *
 *
 *
+
+
+
+
+## Unit Design
+# pulse_tb [vhdl](Pulse_tb.vhd)
+
+
+
+
 Testbench for Pulse module :
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6a773813-e27b-498c-bdd0-4404752cc111" />
