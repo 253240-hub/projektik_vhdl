@@ -16,7 +16,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 ## Blok 1. Architecture
 
-## Blokove schema
+#### Blokove schema
 
 [schema]
 
