@@ -5,7 +5,7 @@ RGB Mood Lamp na NEXYS A7-50T
 ## Brančík Jan
 * tvorba programu, navrh simulace
 ## Cíl projektu
-Tento projekt je yaměřen na vyvoj a softwarovou implementaci řídiciho ovladače RGB lampy na bazi desky NEXYS A7-50T. System poskytuje přiypusobit nastavení osvetlení pomoci tlačitek desky.
+Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovladače RGB lampy na bazi desky NEXYS A7-50T. System poskytuje přiypusobit nastavení osvetlení pomoci tlačitek desky.
 
 ## Zakladní funkce
 * **změna barvy**
