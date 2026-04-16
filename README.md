@@ -33,8 +33,8 @@ Tento projekt je yaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 ## Unit Design
 pulse_tb 
-*[vhdl](Pulse_tb.vhd)
-*[Testbench](pulse_tb.png)
+* [vhdl](Pulse_tb.vhd)
+* [Testbench](pulse_tb.png)
 
 
 
