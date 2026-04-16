@@ -91,5 +91,4 @@ PWB generator_tb
 
 
 
-Testbench for Pulse module :
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6a773813-e27b-498c-bdd0-4404752cc111" />
+
