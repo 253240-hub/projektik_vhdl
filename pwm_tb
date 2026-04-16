@@ -1,0 +1,75 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity pwm_tb is
+end pwm_tb;
+
+architecture Behavioral of pwm_tb is
+
+    -- Constants
+    constant G_BITS : positive := 8;
+
+    -- Signals for DUT
+    signal count : STD_LOGIC_VECTOR(G_BITS-1 downto 0) := (others => '0');
+    signal p1    : STD_LOGIC_VECTOR(G_BITS-1 downto 0) := (others => '0');
+    signal p2    : STD_LOGIC_VECTOR(G_BITS-1 downto 0) := (others => '0');
+    signal p3    : STD_LOGIC_VECTOR(G_BITS-1 downto 0) := (others => '0');
+
+    signal led1  : STD_LOGIC;
+    signal led2  : STD_LOGIC;
+    signal led3  : STD_LOGIC;
+
+begin
+
+    -- Instantiate DUT (Device Under Test)
+    uut: entity work.pwm
+        generic map (
+            G_BITS => G_BITS
+        )
+        port map (
+            count => count,
+            p1    => p1,
+            p2    => p2,
+            p3    => p3,
+            led1  => led1,
+            led2  => led2,
+            led3  => led3
+        );
+
+    --------------------------------------------------------------------
+    -- Stimulus process
+    --------------------------------------------------------------------
+    stim_proc: process
+    begin
+        -- Set PWM thresholds
+        p1 <= std_logic_vector(to_unsigned(64, G_BITS));   -- 25%
+        p2 <= std_logic_vector(to_unsigned(128, G_BITS));  -- 50%
+        p3 <= std_logic_vector(to_unsigned(192, G_BITS));  -- 75%
+
+        wait for 1 ns;
+
+        -- Sweep count from 0 to 255
+        for i in 0 to 255 loop
+            count <= std_logic_vector(to_unsigned(i, G_BITS));
+            wait for 1 ns;
+        end loop;
+
+        -- Change thresholds dynamically
+        p1 <= std_logic_vector(to_unsigned(32, G_BITS));
+        p2 <= std_logic_vector(to_unsigned(96, G_BITS));
+        p3 <= std_logic_vector(to_unsigned(160, G_BITS));
+
+        wait for 1 ns;
+
+        -- Sweep again
+        for i in 0 to 255 loop
+            count <= std_logic_vector(to_unsigned(i, G_BITS));
+            wait for 1 ns;
+        end loop;
+
+        -- End simulation
+        wait;
+    end process;
+
+end Behavioral;
