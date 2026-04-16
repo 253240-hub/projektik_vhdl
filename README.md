@@ -36,7 +36,6 @@ Tento projekt je yaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 * [vhdl](Pulse_tb.vhd)
 * [Testbench](pulse_tb.png)
 
-  
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
 |`count`| in|`std_logic_vector(7 downto 0)`| ....   |
@@ -48,6 +47,8 @@ Tento projekt je yaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 |`pwm1`|out|`STD_LOGIC_VECTOR(7 downto 0)`|...|
 |`pwm2`|out|`STD_LOGIC_VECTOR(7 downto 0)`|...|
 |`pwm3`|out|`STD_LOGIC_VECTOR(7 downto 0)`|...|
+
+
 
 
 
