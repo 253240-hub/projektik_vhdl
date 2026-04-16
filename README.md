@@ -12,8 +12,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 (Umnožuje měnit barvu barvu)
 * **změna rychlostí**
 (pomocí tlačitek měnit rychlost záře)
-* **reset**
-(vrátit do původního stavu)
+
 
 #### Blok 1. Architecture
 
@@ -24,11 +23,12 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 
 ## Tlačítka
-*
-*
-*
-
-
+* **BTNU/BTND**  zvyšení/snížení jasu
+* **BTNR** zvyšení rychlosti animace
+* **BTNL** snížení rzchlosti animace
+## RGB
+* **led17** pro zobrazení barev
+  
 
 
 ## Unit Design
