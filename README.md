@@ -48,7 +48,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 |`pwm3`|out|`STD_LOGIC_VECTOR(7 downto 0)`|...|
 
 **Pulse_tb** 
-* [vhdl](Pulse_tb.vhd)
+* [Pulse_tb](Pulse_tb.vhd)
 * [Testbench](pulse_tb.png)
 
 
