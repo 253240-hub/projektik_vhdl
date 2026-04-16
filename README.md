@@ -50,9 +50,35 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 |`pwm3`|out|`STD_LOGIC_VECTOR(7 downto 0)`|...|
 
 
+
+
+
+
 PWB generator_tb
 [vhdl](odkaz)
 [Testbench](odkaz png)
+
+| **Port name** | **Derection** | **Type**   | **Description**   |
+|--- | --- | ---| ---|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
