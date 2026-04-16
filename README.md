@@ -1,6 +1,6 @@
 VHDL projekt 
 Uchak Reshat
-Dukumentace projektu, tvorba programu
+Dokumentace projektu, tvorba programu
 Brančík Jan
 tvorba programu, navrh simulace
 Cíl projektu
