@@ -33,9 +33,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 
 ## Blok 2. Unit Design
-**Pulse_tb** 
-* [vhdl](Pulse_tb.vhd)
-* [Testbench](pulse_tb.png)
+#### Pulse.vhd
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
@@ -49,6 +47,9 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 |`pwm2`|out|`STD_LOGIC_VECTOR(7 downto 0)`|...|
 |`pwm3`|out|`STD_LOGIC_VECTOR(7 downto 0)`|...|
 
+**Pulse_tb** 
+* [vhdl](Pulse_tb.vhd)
+* [Testbench](pulse_tb.png)
 
 
 
