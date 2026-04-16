@@ -1,8 +1,8 @@
 ## VHDL projekt 
 RGB Mood Lamp na NEXYS A7-50T
-## Uchak Reshat
+#### Uchak Reshat
 * Dokumentace projektu, tvorba programu
-## Brančík Jan
+#### Brančík Jan
 * tvorba programu, navrh simulace
 ## Cíl projektu
 Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovladače RGB lampy na bazi desky NEXYS A7-50T. System poskytuje přizpusobit nastavení osvetlení pomoci tlačitek desky.
