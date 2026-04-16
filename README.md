@@ -39,12 +39,12 @@ Pulse_tb
   
 | Port name | Derection | Type   | Description   |
 |--- | --- | ---| ---|
-|count| in|std_logic_vector(7 downto 0)| ....   |
-|addspeed| in|std_logic'| ...|
-|lvspeed|in|std_logic'|...|
-|addpower|in|std_logic'|...|
-|lvpower|in|std_logic'|...|
-|clk|in|std_logic'|...|
+|'count'| in|std_logic_vector(7 downto 0)| ....   |
+|addspeed| in|std_logic| ...|
+|lvspeed|in|std_logic|...|
+|addpower|in|std_logic|...|
+|lvpower|in|std_logic|...|
+|clk|in|std_logic|...|
 |pwm1|out|STD_LOGIC_VECTOR(7 downto 0)|...|
 |pwm2|out|STD_LOGIC_VECTOR(7 downto 0)|...|
 |pwm3|out|STD_LOGIC_VECTOR(7 downto 0)|...|
