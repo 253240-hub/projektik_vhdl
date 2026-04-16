@@ -5,11 +5,13 @@
 * tvorba programu, navrh simulace
 ## Cíl projektu
 Tento projekt je yaměřen na vyvoj a softwarovou implementaci řídiciho ovladače RGB lampy na bazi desky NEXYS A7-50T. System poskytuje přiypusobit nastavení osvetlení pomoci tlačitek desky.
-Mood Lamp.
-## Hlavní současti architektury
+
+## Zakladní funkce
+* Vyder barvy
+* 
 This repository contains VHDL projekt for the bachelor-level course Digital Electronics at Brno University of Technology (Czechia), using the Nexys A7 Artix-7 FPGA board.
 
-
+| | |
 
 
 Testbench for Pulse module :
