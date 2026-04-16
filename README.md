@@ -8,12 +8,12 @@ RGB Mood Lamp na NEXYS A7-50T
 Tento projekt je yaměřen na vyvoj a softwarovou implementaci řídiciho ovladače RGB lampy na bazi desky NEXYS A7-50T. System poskytuje přiypusobit nastavení osvetlení pomoci tlačitek desky.
 
 ## Zakladní funkce
-* změna barvy
-(Umnožuje měnit barvu barvu)
-* změna rychlostí
-(pomocí tlačitek měnit rychlost záře)
-* reset
-(vrátit do původního stavu)
+**změna barvy**
+* (Umnožuje měnit barvu barvu)
+**změna rychlostí**
+*(pomocí tlačitek měnit rychlost záře)
+**reset**
+*(vrátit do původního stavu)
 
 #### Blok 1. Architecture
 
@@ -32,7 +32,7 @@ Tento projekt je yaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 
 ## Unit Design
-Pulse_tb 
+**Pulse_tb** 
 * [vhdl](Pulse_tb.vhd)
 * [Testbench](pulse_tb.png)
 
