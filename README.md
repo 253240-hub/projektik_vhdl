@@ -15,7 +15,11 @@ pomocí tlačitek měnit rychlost záře
 * reset
 vrátit do původního stavu
 
+## Blok 1. Architecture
 
+## Blokove schema:
+
+[schema]
 
 
 
