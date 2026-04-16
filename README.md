@@ -31,7 +31,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
   
 
 
-## Unit Design
+## Blok 2. Unit Design
 **Pulse_tb** 
 * [vhdl](Pulse_tb.vhd)
 * [Testbench](pulse_tb.png)
