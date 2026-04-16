@@ -37,7 +37,7 @@ Pulse_tb
 * [Testbench](pulse_tb.png)
 | Port name | Derection | Type   | Description   |
 |--- | --- | ---| ---|
-| 'count'     |    in   |  'std_logick' | ....   |
+| 'count'     |    in   |  'std_logic' | ....   |
 
 
 
