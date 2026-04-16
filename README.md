@@ -26,6 +26,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 * **BTNU/BTND**  zvyšení/snížení jasu
 * **BTNR** zvyšení rychlosti animace
 * **BTNL** snížení rzchlosti animace
+* **BTNC** reset
 #### RGB
 * **led17** pro zobrazení barev
   
