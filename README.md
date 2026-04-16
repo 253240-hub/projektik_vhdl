@@ -14,7 +14,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 (pomocí tlačitek měnit rychlost záře)
 
 
-#### Blok 1. Architecture
+## Blok 1. Architecture
 
 ## Blokove schema
 
