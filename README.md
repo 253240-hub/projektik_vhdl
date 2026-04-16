@@ -49,7 +49,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 **Pulse_tb** 
 * [Pulse_tb](Pulse_tb.vhd)
-* [Testbench](pulse_tb.png)
+* [Testbench img](pulse_tb.png)
 
 
 
