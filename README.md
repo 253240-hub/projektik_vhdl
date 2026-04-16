@@ -1,5 +1,5 @@
 ## VHDL projekt 
-RGB Mood Lamp na NEXZS A7-50T
+RGB Mood Lamp na NEXYS A7-50T
 ## Uchak Reshat
 * Dokumentace projektu, tvorba programu
 ## Brančík Jan
