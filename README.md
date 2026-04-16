@@ -1,4 +1,5 @@
 ## VHDL projekt 
+RGB Mood Lamp na NEXZS A7-50T
 ## Uchak Reshat
 * Dokumentace projektu, tvorba programu
 ## Brančík Jan
@@ -7,11 +8,16 @@
 Tento projekt je yaměřen na vyvoj a softwarovou implementaci řídiciho ovladače RGB lampy na bazi desky NEXYS A7-50T. System poskytuje přiypusobit nastavení osvetlení pomoci tlačitek desky.
 
 ## Zakladní funkce
-* Vyder barvy
-* 
-This repository contains VHDL projekt for the bachelor-level course Digital Electronics at Brno University of Technology (Czechia), using the Nexys A7 Artix-7 FPGA board.
+* změna barvy
+Umnožuje měnit barvu barvu
+* změna rychlostí
+pomocí tlačitek měnit rychlost záře
+* reset
+vrátit do původního stavu
 
-| | |
+
+
+
 
 
 Testbench for Pulse module :
