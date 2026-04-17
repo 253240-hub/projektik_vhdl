@@ -9,7 +9,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 ## Zakladní funkce
 * **Změna barvy**
-(Umnožuje měnit barvu)
+(Umožňuje měnit barvu)
 * **Změna rychlostí**
 (pomocí tlačitek měnit rychlost záře)
 * **Tlačítko reset**
@@ -27,7 +27,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 #### Tlačítka
 * **BTNU/BTND**  zvyšení/snížení jasu
 * **BTNR** zvyšení rychlosti animace
-* **BTNL** snížení rzchlosti animace
+* **BTNL** snížení rychlosti animace
 * **BTNC** reset
 #### RGB
 * **led17** pro zobrazení barev
@@ -39,15 +39,15 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
-|`count`| in|`std_logic_vector(7 downto 0)`| ....   |
-|`addspeed`| in|`std_logic`| ...|
-|`lvspeed`|in|`std_logic`|...|
-|`addpower`|in|`std_logic`|...|
-|`lvpower`|in|`std_logic`|...|
-|`clk`|in|`std_logic`|...|
-|`pwm1`|out|`STD_LOGIC_VECTOR(7 downto 0)`|...|
-|`pwm2`|out|`STD_LOGIC_VECTOR(7 downto 0)`|...|
-|`pwm3`|out|`STD_LOGIC_VECTOR(7 downto 0)`|...|
+|`count`| in|`std_logic_vector(7 downto 0)`| Vstupní čítač   |
+|`addspeed`| in|`std_logic`|zvýšení rychlosti změny barev |
+|`lvspeed`|in|`std_logic`| snížení rychlosti změny barev|
+|`addpower`|in|`std_logic`| zvýšení celkového jasu|
+|`lvpower`|in|`std_logic`| snížení celkového jasu|
+|`clk`|in|`std_logic`|hodinový signál|
+|`pwm1`|out|`STD_LOGIC_VECTOR(7 downto 0)`|Duty Cycle pro signal RED|
+|`pwm2`|out|`STD_LOGIC_VECTOR(7 downto 0)`|Duty Cycle pro signal GREEN|
+|`pwm3`|out|`STD_LOGIC_VECTOR(7 downto 0)`|Duty Cycle pro signal BLUE|
 
 **Pulse_tb** 
 * [Pulse_tb](Pulse_tb.vhd)
@@ -65,9 +65,9 @@ PWM generator_tb
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
 |`count`| in|`std_logic_vector(G_BITS-1 downto 0)`| ....   |
-|`led1`|out|`std_logic`|....|
-|`led2`|out|`std_logic`|....|
-|`led3`|out|`std_logic`|....|
+|`led1`|out|`std_logic`|Výstupní PWM signál pro RED barvu|
+|`led2`|out|`std_logic`|Výstupní PWM signál pro GREEN barvu|
+|`led3`|out|`std_logic`|Výstupní PWM signál pro BLUE barvu|
 |`p1`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
 |`p2`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
 |`p3`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
