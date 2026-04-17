@@ -57,7 +57,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 
 
-PWB generator_tb
+PWM generator_tb
 * [PWM_tb](pwm_tb)
 * [Testbench img](pwm_tb.png)
 
