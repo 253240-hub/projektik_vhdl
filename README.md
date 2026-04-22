@@ -73,6 +73,10 @@ PWM generator_tb
 |`p3`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
 
 
+<img width="1133" height="528" alt="image" src="https://github.com/user-attachments/assets/f8e39583-b8b4-4aa1-995e-8f6fe20842e4" />
+
+
+
 
 
 
