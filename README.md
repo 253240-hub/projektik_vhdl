@@ -35,6 +35,42 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 * **led17_B** pro zobrazení barev
 
 ## Blok 2. Unit Design
+#### clk
+[popis]
+
+| **Port name** | **Derection** | **Type**   | **Description**   |
+|--- | --- | ---| ---|
+|`clk`|in|`std_logic`| Hlavní hodiny|
+|`rst`|in|`std_logic`|Vysoce aktivní synchronní reset|
+|`ce`|out|`std_logic`|Povolovací impuls s jedním taktovacím cyklem|
+
+
+#### counter
+
+
+| **Port name** | **Derection** | **Type**   | **Description**   |
+|--- | --- | ---| ---|
+|`clk`|in|`std_logic`| Hlavní hodiny|
+|`rst`|in|`std_logic`|Vysoce aktivní synchronní reset|
+|`en`|in|`std_logic`|Vstup aktivace hodin|
+|`cnt`|out|`std_logic_vektor(G_BITS - 1 downto 0)`|Hodnota počítadla|
+
+#### PWM generator
+Snižuje vzsokou frekvenci oscílátoru FPGA na nižší takt. Poskytuje tak stabilní časovou základnu pro všechny ostatní komponenty.
+
+| **Port name** | **Derection** | **Type**   | **Description**   |
+|--- | --- | ---| ---|
+|`count`| in|`std_logic_vector(G_BITS-1 downto 0)`| ....   |
+|`led1`|out|`std_logic`|Výstupní PWM signál pro RED barvu|
+|`led2`|out|`std_logic`|Výstupní PWM signál pro GREEN barvu|
+|`led3`|out|`std_logic`|Výstupní PWM signál pro BLUE barvu|
+|`p1`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
+|`p2`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
+|`p3`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
+
+* [PWM_tb](pwm_tb)
+* [Testbench img](pwm_tb.png)
+
 #### Pulse
 [popis]
 
@@ -54,45 +90,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 * [Testbench img](pulse_tb1.png)
 
 
-
-#### PWM generator
-Snižuje vzsokou frekvenci oscílátoru FPGA na nižší takt. Poskytuje tak stabilní časovou základnu pro všechny ostatní komponenty.
-
-| **Port name** | **Derection** | **Type**   | **Description**   |
-|--- | --- | ---| ---|
-|`count`| in|`std_logic_vector(G_BITS-1 downto 0)`| ....   |
-|`led1`|out|`std_logic`|Výstupní PWM signál pro RED barvu|
-|`led2`|out|`std_logic`|Výstupní PWM signál pro GREEN barvu|
-|`led3`|out|`std_logic`|Výstupní PWM signál pro BLUE barvu|
-|`p1`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
-|`p2`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
-|`p3`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
-
-* [PWM_tb](pwm_tb)
-* [Testbench img](pwm_tb.png)
-
-
-
-#### counter
-
-
-| **Port name** | **Derection** | **Type**   | **Description**   |
-|--- | --- | ---| ---|
-|`clk`|in|`std_logic`| Hlavní hodiny|
-|`rst`|in|`std_logic`|Vysoce aktivní synchronní reset|
-|`en`|in|`std_logic`|Vstup aktivace hodin|
-|`cnt`|out|`std_logic_vektor(G_BITS - 1 downto 0)`|Hodnota počítadla|
-
-
-
-#### clk
-[popis]
-
-| **Port name** | **Derection** | **Type**   | **Description**   |
-|--- | --- | ---| ---|
-|`clk`|in|`std_logic`| Hlavní hodiny|
-|`rst`|in|`std_logic`|Vysoce aktivní synchronní reset|
-|`ce`|out|`std_logic`|Povolovací impuls s jedním taktovacím cyklem|
+# Blok3
 
 
 
