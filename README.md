@@ -50,11 +50,8 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 |`pwm2`|out|`STD_LOGIC_VECTOR(7 downto 0)`|Duty Cycle pro signal GREEN|
 |`pwm3`|out|`STD_LOGIC_VECTOR(7 downto 0)`|Duty Cycle pro signal BLUE|
 
-**Pulse_tb** 
 * [Pulse_tb](Pulse_tb.vhd)
 * [Testbench img](pulse_tb1.png)
-
-
 
 
 
@@ -87,9 +84,9 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 |`cnt`|out|`std_logic_vektor(G_BITS - 1 downto 0)`|Hodnota počítadla|
 
 
+
 #### clk
 [popis]
-
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
