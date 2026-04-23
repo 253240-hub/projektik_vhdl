@@ -35,7 +35,8 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 
 ## Blok 2. Unit Design
-#### Pulse.vhd
+#### Pulse
+[popis]
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
@@ -57,10 +58,8 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 
 
-PWM generator_tb
-* [PWM_tb](pwm_tb)
-* [Testbench img](pwm_tb.png)
-
+#### PWM generator
+[popis]
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
@@ -72,7 +71,35 @@ PWM generator_tb
 |`p2`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
 |`p3`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
 
-## Blok 3. Top-level
+* [PWM_tb](pwm_tb)
+* [Testbench img](pwm_tb.png)
+
+
+
+#### Counter
+[popis]
+
+| **Port name** | **Derection** | **Type**   | **Description**   |
+|--- | --- | ---| ---|
+|`clk`| in|`std_logic_vector(G_BITS-1 downto 0)`| Hlavní hodiny|
+|`rst`|out|`std_logic`|Vysoce aktivní synchronní reset|
+|`en`|out|`std_logic`|Vstup aktivace hodin|
+|`cnt`|out|`std_logic_vektor(G_BITS - 1 downto 0)`|Hodnota počítadla|
+
+
+#### clk
+[popis]
+
+
+| **Port name** | **Derection** | **Type**   | **Description**   |
+|--- | --- | ---| ---|
+|`clk`| in|`std_logic_vector(G_BITS-1 downto 0)`| Hlavní hodiny|
+|`rst`|out|`std_logic`|Vysoce aktivní synchronní reset|
+|`ce`|out|`std_logic`|Povolovací impuls s jedním taktovacím cyklem|
+
+
+
+
 
 
 
