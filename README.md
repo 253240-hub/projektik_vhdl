@@ -30,9 +30,9 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 * **BTNL** snížení rychlosti animace
 * **BTNC** reset
 #### RGB
-* **led17** pro zobrazení barev
-  
-
+* **led1_R** 
+* **led17_G**  
+* **led17_B** pro zobrazení barev
 
 ## Blok 2. Unit Design
 #### Pulse
