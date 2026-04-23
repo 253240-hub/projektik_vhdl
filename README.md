@@ -72,7 +72,8 @@ PWM generator_tb
 |`p2`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
 |`p3`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
 
-## Blok 3. Block Design
+## Blok 3. Top-level
+
 
 
 
