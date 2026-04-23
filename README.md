@@ -37,7 +37,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 ## Blok 2. Unit Design
 #### clk
 [popis]
-
+* [VHDL kod]()
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
 |`clk`|in|`std_logic`| Hlavní hodiny|
@@ -46,8 +46,8 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 
 #### counter
-
-
+[popis]
+* [VHDL kod]()
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
 |`clk`|in|`std_logic`| Hlavní hodiny|
@@ -57,7 +57,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 #### PWM generator
 Snižuje vzsokou frekvenci oscílátoru FPGA na nižší takt. Poskytuje tak stabilní časovou základnu pro všechny ostatní komponenty.
-
+* [VHDL kod]()
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
 |`count`| in|`std_logic_vector(G_BITS-1 downto 0)`| ....   |
@@ -73,7 +73,7 @@ Snižuje vzsokou frekvenci oscílátoru FPGA na nižší takt. Poskytuje tak sta
 
 #### Pulse
 [popis]
-
+* [VHDL kod]()
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
 |`count`| in|`std_logic_vector(7 downto 0)`| Vstupní čítač   |
