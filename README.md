@@ -74,7 +74,7 @@ Snižuje vzsokou frekvenci oscílátoru FPGA na nižší takt. Poskytuje tak sta
 |`p2`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
 |`p3`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
 
-* [PWM_tb](pwm_tb)
+* [VHDL kod](pwm_tb)
 * [Testbench img](pwm_tb.png)
 
 #### Pulse
@@ -93,7 +93,7 @@ Snižuje vzsokou frekvenci oscílátoru FPGA na nižší takt. Poskytuje tak sta
 |`pwm2`|out|`STD_LOGIC_VECTOR(7 downto 0)`|Duty Cycle pro signal GREEN|
 |`pwm3`|out|`STD_LOGIC_VECTOR(7 downto 0)`|Duty Cycle pro signal BLUE|
 
-* [Pulse_tb](Pulse_tb.vhd)
+* [VHDL kod](Pulse_tb.vhd)
 * [Testbench img](pulse_tb1.png)
 
 
