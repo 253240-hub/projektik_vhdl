@@ -76,14 +76,14 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 
 
-#### Counter
+#### counter
 [popis]
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
-|`clk`| in|`std_logic_vector(G_BITS-1 downto 0)`| Hlavní hodiny|
-|`rst`|out|`std_logic`|Vysoce aktivní synchronní reset|
-|`en`|out|`std_logic`|Vstup aktivace hodin|
+|`clk`|in|`std_logic`| Hlavní hodiny|
+|`rst`|in|`std_logic`|Vysoce aktivní synchronní reset|
+|`en`|in|`std_logic`|Vstup aktivace hodin|
 |`cnt`|out|`std_logic_vektor(G_BITS - 1 downto 0)`|Hodnota počítadla|
 
 
@@ -93,8 +93,8 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
-|`clk`| in|`std_logic_vector(G_BITS-1 downto 0)`| Hlavní hodiny|
-|`rst`|out|`std_logic`|Vysoce aktivní synchronní reset|
+|`clk`|in|`std_logic`| Hlavní hodiny|
+|`rst`|in|`std_logic`|Vysoce aktivní synchronní reset|
 |`ce`|out|`std_logic`|Povolovací impuls s jedním taktovacím cyklem|
 
 
