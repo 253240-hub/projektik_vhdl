@@ -56,7 +56,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 
 #### PWM generator
-[popis]
+## Snižuje vzsokou frekvenci oscílátoru FPGA na nižší takt. Poskytuje tak stabilní časovou základnu pro všechny ostatní komponenty.
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
@@ -74,7 +74,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 
 #### counter
-[popis]
+
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
