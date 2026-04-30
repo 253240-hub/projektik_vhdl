@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
--- Company: 
+-- Company:
 -- Engineer: 
 -- 
 -- Create Date: 04/09/2026 01:12:34 PM
@@ -49,11 +49,16 @@ architecture Behavioral of Pulse is
     
     signal power    : integer range 1 to 255 := 1;
     signal speed    : integer range 1 to 255 := 1;
-    signal time     : integer range 0 to 255 := 0;
+    signal time     : integer range 0 to 4096 := 0;
     signal adjtime  : integer range 0 to 255 := 0;
     signal fa       : integer range 0 to 255 := 0;
     signal fb       : integer range 0 to 255 := 0;
+    constant dmax   : integer := 2550000;
+    constant ofset  : integer := 2400;
+    
+    signal delay    : integer range 0 to dmax := 0;
     constant ovf    : integer := 255;
+    
     
     
     
@@ -62,35 +67,43 @@ begin
     clock : process (clk) is
     begin
         if rising_edge(clk) then
-        
-            if addspeed = '1' then
-                if speed < 255 then
-                    speed <= speed + 1;
+            
+            if delay > 0 then
+                delay <= delay - 1;
+            end if;
+            if delay = 0 then
+                if lvspeed = '1' then
+                    if speed < 255 then
+                        speed <= speed + 1;
+                        delay <= dmax;
+                    end if;
+                end if;
+            
+                if addspeed = '1' then
+                    if speed > 1 then
+                        speed <= speed - 1;
+                        delay <= dmax;
+                    end if;
+                end if;
+            
+                if addpower = '1' then
+                    if power < 255 then
+                        power <= power + 1;
+                        delay <= dmax;
+                    end if;
+                end if;
+            
+                if lvpower = '1' then
+                    if power > 1 then
+                        power <= power - 1;
+                        delay <= dmax;
+                    end if;
                 end if;
             end if;
-        
-            if lvspeed = '1' then
-                if speed > 1 then
-                    speed <= speed - 1;
-                end if;
-            end if;
-        
-            if addpower = '1' then
-                if power < 255 then
-                    power <= power + 1;
-                end if;
-            end if;
-        
-            if lvpower = '1' then
-                if power > 1 then
-                    power <= power - 1;
-                end if;
-            end if;
-        
         
             if count = "00000000" then
                 time <= time + 1;
-                if time > speed then
+                if time > (4*speed + ofset) then
                 
                     time <= 0;
                     
@@ -115,9 +128,9 @@ begin
         end if;
     end process clock;
     
-    pwm1 <= std_logic_vector(to_unsigned(adjtime / power, 8));
-    pwm2 <= std_logic_vector(to_unsigned(fa / power, 8));
-    pwm3 <= std_logic_vector(to_unsigned(fb / power, 8));
+    pwm1 <= std_logic_vector(to_unsigned((adjtime * power) / 255, 8));
+    pwm2 <= std_logic_vector(to_unsigned((fa * power) / 255, 8));
+    pwm3 <= std_logic_vector(to_unsigned((fb * power) / 255, 8));
 
 
 end Behavioral;
