@@ -36,8 +36,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 
 ## Blok 2. Unit Design
 #### clk
-[popis]
-  
+snižuje rychlost času    
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
 |`clk`|in|`std_logic`| Hlavní hodiny|
@@ -47,7 +46,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 * [VHDL kod]()
 
 #### counter
-[popis]
+počita od 0 až 255, pak začina znovu.
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
@@ -76,7 +75,7 @@ Snižuje vysokou frekvenci oscílátoru FPGA na nižší takt. Poskytuje tak sta
 * [Testbench img](pwm_tb.png)
 
 #### Pulse
-[popis] 
+Pulse je zodpovědný přímo za vytvoření signalu PWM a způsobuje, že LED svítí tmavši nebo světlejší
 
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
