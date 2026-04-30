@@ -37,6 +37,9 @@ entity pwm is
            led1 : out STD_LOGIC;
            led2 : out STD_LOGIC;
            led3 : out STD_LOGIC;
+           led12 : out STD_LOGIC;
+           led22 : out STD_LOGIC;
+           led32 : out STD_LOGIC;
            p1 : in STD_LOGIC_VECTOR (G_BITS-1 downto 0);
            p2 : in STD_LOGIC_VECTOR (G_BITS-1 downto 0);
            p3 : in STD_LOGIC_VECTOR (G_BITS-1 downto 0));
@@ -45,8 +48,11 @@ end pwm;
 architecture Behavioral of pwm is
 
 begin
-    led1 <= '1' when count > p1 else '0';
-    led2 <= '1' when count > p2 else '0';
-    led3 <= '1' when count > p3 else '0';
+    led1 <= '1' when count < p1 else '0';
+    led2 <= '1' when count < p2 else '0';
+    led3 <= '1' when count < p3 else '0';
+    led12 <= '1' when count < p1 else '0';
+    led22 <= '1' when count < p2 else '0';
+    led32 <= '1' when count < p3 else '0';
 
 end Behavioral;
