@@ -59,7 +59,7 @@ Tento projekt je zaměřen na vyvoj a softwarovou implementaci řídiciho ovlada
 * [VHDL kod]()
 
 #### PWM generator
-Snižuje vzsokou frekvenci oscílátoru FPGA na nižší takt. Poskytuje tak stabilní časovou základnu pro všechny ostatní komponenty.
+Snižuje vysokou frekvenci oscílátoru FPGA na nižší takt. Poskytuje tak stabilní časovou základnu pro všechny ostatní komponenty.
 
  
 | **Port name** | **Derection** | **Type**   | **Description**   |
