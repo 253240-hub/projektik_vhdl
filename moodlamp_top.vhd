@@ -32,15 +32,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity moodlamp_top is
-    Port ( clk   : in STD_LOGIC;
-           btn_u : in STD_LOGIC;
-           btn_d : in STD_LOGIC;
-           btn_l : in STD_LOGIC;
-           btn_r : in STD_LOGIC;
-           btn_c : in STD_LOGIC;
-           led_r : out STD_LOGIC;
-           led_g : out STD_LOGIC;
-           led_b : out STD_LOGIC);
+    Port ( clk      : in STD_LOGIC;
+           btn_u    : in STD_LOGIC;
+           btn_d    : in STD_LOGIC;
+           btn_l    : in STD_LOGIC;
+           btn_r    : in STD_LOGIC;
+           btn_c    : in STD_LOGIC;
+           led_r    : out STD_LOGIC;
+           led_g    : out STD_LOGIC;
+           led_b    : out STD_LOGIC;
+           led_r2   : out STD_LOGIC;
+           led_g2   : out STD_LOGIC;
+           led_b2   : out STD_LOGIC);
 end moodlamp_top;
 
 architecture Behavioral of moodlamp_top is
@@ -66,13 +69,16 @@ architecture Behavioral of moodlamp_top is
 
     component pwm is
         generic ( G_BITS : positive );
-        Port ( count    : in STD_LOGIC_VECTOR (G_BITS-1 downto 0);
-               led1     : out STD_LOGIC;
-               led2     : out STD_LOGIC;
-               led3     : out STD_LOGIC;
-               p1       : in STD_LOGIC_VECTOR (G_BITS-1 downto 0);
-               p2       : in STD_LOGIC_VECTOR (G_BITS-1 downto 0);
-               p3       : in STD_LOGIC_VECTOR (G_BITS-1 downto 0));
+        Port ( count     : in STD_LOGIC_VECTOR (G_BITS-1 downto 0);
+               led1      : out STD_LOGIC;
+               led2      : out STD_LOGIC;
+               led3      : out STD_LOGIC;
+               led12     : out STD_LOGIC;
+               led22     : out STD_LOGIC;
+               led32     : out STD_LOGIC;
+               p1        : in STD_LOGIC_VECTOR (G_BITS-1 downto 0);
+               p2        : in STD_LOGIC_VECTOR (G_BITS-1 downto 0);
+               p3        : in STD_LOGIC_VECTOR (G_BITS-1 downto 0));
     end component pwm;
     
     component Pulse is
@@ -119,6 +125,9 @@ begin
            led1     => led_r,
            led2     => led_g,
            led3     => led_b,
+           led12     => led_r2,
+           led22     => led_g2,
+           led32     => led_b2,
            p1       => sig_p1,
            p2       => sig_p2,
            p3       => sig_p3
