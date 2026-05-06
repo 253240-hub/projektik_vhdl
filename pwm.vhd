@@ -1,15 +1,15 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: VUT
+-- Engineer: Brančík
 -- 
 -- Create Date: 04/02/2026 01:57:05 PM
--- Design Name: 
+-- Design Name: pwm
 -- Module Name: pwm - Behavioral
--- Project Name: 
--- Target Devices: 
+-- Project Name: Moodlamp
+-- Target Devices: VHDL
 -- Tool Versions: 
 -- Description: 
--- 
+-- Převádí hodnotu z čítače na 3 pwm signály podle prahových hodnot
 -- Dependencies: 
 -- 
 -- Revision:
