@@ -1,16 +1,17 @@
 ----------------------------------------------------------------------------------
--- Company:
--- Engineer: 
+-- Company: VUT
+-- Engineer: Brančík
 -- 
 -- Create Date: 04/09/2026 01:12:34 PM
--- Design Name: 
+-- Design Name: Pulse
 -- Module Name: Pulse - Behavioral
--- Project Name: 
--- Target Devices: 
+-- Project Name: Moodlamp
+-- Target Devices: VHDL
 -- Tool Versions: 
 -- Description: 
--- 
--- Dependencies: 
+-- Vytváří 3 rampové signály v hodnotách 0-255 otočené o 120 °
+-- Lze měnit rychlost časové osy a jas
+-- Dependencies:
 -- 
 -- Revision:
 -- Revision 0.01 - File Created
