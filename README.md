@@ -63,13 +63,13 @@ Snižuje vysokou frekvenci oscílátoru FPGA na nižší takt. Poskytuje tak sta
  
 | **Port name** | **Derection** | **Type**   | **Description**   |
 |--- | --- | ---| ---|
-|`count`| in|`std_logic_vector(G_BITS-1 downto 0)`| ....   |
+|`count`| in|`std_logic_vector(G_BITS-1 downto 0)`| Vstup hladiny čítače   |
 |`led1`|out|`std_logic`|Výstupní PWM signál pro RED barvu|
 |`led2`|out|`std_logic`|Výstupní PWM signál pro GREEN barvu|
 |`led3`|out|`std_logic`|Výstupní PWM signál pro BLUE barvu|
-|`p1`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
-|`p2`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
-|`p3`|in|`std_logic_vector(G_BITS-1 downto 0)`|...|
+|`p1`|in|`std_logic_vector(G_BITS-1 downto 0)`|prah barvy R|
+|`p2`|in|`std_logic_vector(G_BITS-1 downto 0)`|prah barvy G|
+|`p3`|in|`std_logic_vector(G_BITS-1 downto 0)`|prah barvy B|
 
 * [VHDL kod](pwm_tb)
 * [Testbench img](pwm_tb.png)
