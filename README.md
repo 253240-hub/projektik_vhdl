@@ -95,7 +95,7 @@ Pulse je zodpovědný přímo za vytvoření signalu PWM a způsobuje, že LED s
 
 # Blok3
 
-* [Video]([MoodLamp.mp4](https://github.com/user-attachments/assets/653068ef-6b4a-4471-9b0e-1a56e90a50e8))
+* [Video]([MoodLamp.mp4](https://github.com/user-attachments/assets/653068ef-6b4a-4471-9b0e-1a56e90a50e8)
 * [Poster](poster.pdf)
 
 
